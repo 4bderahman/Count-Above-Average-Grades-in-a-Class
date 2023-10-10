@@ -1,0 +1,27 @@
+ALGORITHME Notes superieur
+
+VARIABLES
+    Tableau notes(10) : Réel
+    somme, moyenne : Réel
+    c, i : Entier
+
+DEBUT
+
+    POUR i <-- 0 à 9 pas 1 FAIRE
+        ecrire("Entrez la note de l'étudiant ", i+1, " : ")
+        lire(notes(i))
+        somme <-- somme + notes(i)
+    FIN POUR
+
+    moyenne <-- somme / 10
+    c <-- 0
+
+    POUR i <-- 0 à 9 pas 1 FAIRE
+        SI notes(i) > moyenne ALORS
+            c <-- c + 1
+        FIN SI
+    FIN POUR
+
+    ecrire("Le nombre de notes supérieures à la moyenne est : ", c)
+
+FIN
